@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="CrearMensajeActivity"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crear_mensaje"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.taller2.nelson.taller2.CrearMensajeActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Ingrese el mensaje"
+        android:ems="10"
+        android:id="@+id/entradatexto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonenviar"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/entradatexto"
+        android:layout_alignEnd="@+id/lbtitulo"
+        android:onClick="buttonOnSendMessage" />
+
+    <Button
+        android:text="Salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonSalir"
+        android:onClick="buttonOnSalir"
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/miboton" />
+
+    <Button
+        android:text="Traducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/miboton"
+        android:onClick="buttonOnClick"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/botonSalir"
+        android:layout_alignStart="@+id/botonenviar"
+        android:layout_marginBottom="75dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/lbtitulo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp"
+        android:layout_above="@+id/miboton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="LLamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/botonllamar"
+        android:layout_above="@+id/lbtitulo"
+        android:layout_alignEnd="@+id/miboton"
+        android:layout_alignStart="@+id/miboton"
+        android:onClick="buttonOnLlamar"/>
+</RelativeLayout>

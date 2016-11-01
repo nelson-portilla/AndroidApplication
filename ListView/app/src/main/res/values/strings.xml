@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JuanValdez</string>
+    <string name="juanValdezLogo">Juan Valdez Logo</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Stores</item>
+    </string-array>
+
+    <string name="title_activity_drink_category">DrinkCategoryActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_drink">DrinkActivity</string>
+
+</resources>
